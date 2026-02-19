@@ -1,0 +1,20 @@
+name: Included workflow
+
+on: workflow_call
+
+runs:
+
+  using: "composite"
+
+  steps:
+
+  - name: Recursive file list
+    shell: bash
+    run: ls -alR ${{ github.workspace }}
+
+  - name: Dump environment vars
+    shell: bash
+    run: env
+
+  - name: Dump inputs
+    uses: utenx/gh-dump-context@v1
