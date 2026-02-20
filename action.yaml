@@ -17,5 +17,4 @@ runs:
     run: env
 
   - name: Dump inputs
-    environment: terraform
     uses: utenx/gh-dump-context@v1
