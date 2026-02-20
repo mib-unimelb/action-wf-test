@@ -12,15 +12,6 @@ runs:
     shell: bash
     run: ls -alR ${{ github.workspace }}
 
-  - name: Dump environment vars
-    shell: bash
-    run: env | sort
-
-  - name: Dump github context
-    shell: bash
-    run: |
-      echo '${{ toJSON(github) }}'
-
   - name: Dump vars context
     shell: bash
     run: |
