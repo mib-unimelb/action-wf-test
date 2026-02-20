@@ -17,9 +17,11 @@ runs:
     run: env | sort
 
   - name: Dump github context
+    shell: bash
     run: |
       echo '${{ toJSON(github) }}'
 
   - name: Dump vars context
+    shell: bash
     run: |
       echo '${{ toJSON(vars) }}'
