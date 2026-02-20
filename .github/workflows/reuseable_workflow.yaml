@@ -1,20 +1,17 @@
+---
+
 name: 'Reusable Workflow'
 
 on: 'workflow_call'
 
-permissions:
-  contents: read
-  packages: read
-  id-token: read
-
 jobs:
   rj1:
     steps:
-    - name: composite include
-      uses: ./action.yaml
+      - name: composite include
+        uses: ./action.yaml
 
   rj2:
     environment: terraform
     steps:
-    - name: composite include subdir with environment
-      uses: ./component/action.yaml
+      - name: composite include subdir with environment
+        uses: ./component/action.yaml
