@@ -19,8 +19,5 @@ jobs:
     runs-on: ubuntu-latest
     environment: terraform
     steps:
-      - name: Dump vars context
-        shell: bash
-        run: echo '${{ toJSON(vars) }}'
       - name: composite include subdir with environment
         uses: mib-unimelb/action-wf-test/component@main
