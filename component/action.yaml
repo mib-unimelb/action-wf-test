@@ -14,7 +14,7 @@ runs:
 
   - name: Dump environment vars
     shell: bash
-    run: env
+    run: env | sort
 
   - name: Dump inputs
     uses: utenx/gh-dump-context@v1
