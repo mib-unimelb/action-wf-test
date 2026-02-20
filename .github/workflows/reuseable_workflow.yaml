@@ -8,6 +8,8 @@ jobs:
   rj1:
     runs-on: ubuntu-latest
     steps:
+      - name: Dump context
+        uses: utenx/gh-dump-context@v1
       - name: composite include
         uses: mib-unimelb/action-wf-test@main
 
