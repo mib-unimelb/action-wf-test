@@ -8,10 +8,10 @@ jobs:
   rj1:
     steps:
       - name: composite include
-        uses: ./action.yaml
+        uses: mib-unimelb/action-wf-test@main
 
   rj2:
     environment: terraform
     steps:
       - name: composite include subdir with environment
-        uses: ./component/action.yaml
+        uses: mib-unimelb/action-wf-test/component@main
