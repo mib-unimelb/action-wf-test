@@ -5,6 +5,7 @@ name: 'Reusable Workflow'
 on: 'workflow_call'
 
 jobs:
+  runs-on: ubuntu-latest
   rj1:
     steps:
       - name: composite include
