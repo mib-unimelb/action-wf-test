@@ -16,5 +16,10 @@ runs:
     shell: bash
     run: env | sort
 
-  - name: Dump inputs
-    uses: utenx/gh-dump-context@v1
+  - name: Dump github context
+    run: |
+      echo '${{ toJSON(github) }}'
+
+  - name: Dump vars context
+    run: |
+      echo '${{ toJSON(vars) }}'
