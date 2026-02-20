@@ -5,8 +5,8 @@ name: 'Reusable Workflow'
 on: 'workflow_call'
 
 jobs:
-  runs-on: ubuntu-latest
   rj1:
+    runs-on: ubuntu-latest
     steps:
       - name: composite include
         uses: mib-unimelb/action-wf-test@main
